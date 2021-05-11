@@ -1,0 +1,110 @@
+﻿/* Change dropdown menu backcolor */
+.dropdown-menu{
+    background-color: #343A40 ;
+}
+
+/* Change dropdown selected item forecolor */
+.dropdown-menu a:hover{
+    color: #343A40 !important;
+}
+
+/* Darking image */
+.darking-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url("../media/header-bkg2.jpg");
+    /* Set a specific height */
+    /*height: 50%;*/
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Fit this class to screen */
+.height-100{
+    min-height:100vh;
+}
+.height-80{
+    min-height:80vh;
+}
+
+/* Line for Sections Header Underline */
+.title-underline {
+    width: 280px !important;
+    height: 7px !important;
+    margin: 0 auto !important;
+
+}
+
+.Code-Box{
+    width: auto;
+    background-color: rgb(216, 255, 200);
+    padding: 16px 24px;
+    border-left: 4px solid #04AA6D;
+    word-wrap: break-word;
+}
+
+.Code-Box-Title{
+    width: 100px;
+    margin-bottom: 0px;
+    background-color: #04AA6D !important;
+    text-align: center;
+    color:white;
+
+}
+
+/* Animate Fontawesome Spin */
+.anim-fa-spin:hover{
+    animation: fa-spin 2s infinite linear;
+}
+
+/* Animate Logo */
+.anim-logo {
+    animation: bounceIn 0.6s;
+    transform: rotate(0deg) scale(1) translateZ(0);
+    transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+    /* cursor: pointer; */
+  }
+.anim-logo:hover {
+    transform: rotate(0deg) scale(1.1);
+  }
+
+  /* Animate 2 Faces Card */
+ /* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+.flip-container, .front, .back {
+	width: 100%;
+	height: 25%;
+}
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
